@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1437183_c7ulbiegwoc.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<!--header-->
+		<header class="header">
+			<span class="iconfont icon-add-fill"></span>
+			<div class="input_search">
+				<span class="iconfont icon-fangdajing"></span>
+				<input type="text" value="搜索食谱/食材"/>
+			</div>
+			<a href="message.html"><span class="iconfont icon-lingdang"></span></a>
+		</header>
+		
+		<!--content-->
+		<section class="content">
+			<section class="banner">
+				<img src="img/index_banner.png"/>
+			</section>
+			<section class="mid_nav">
+				<ul>
+					<li>
+						<a href="mustsee.html">
+							<i class="iconfont icon-shu"></i>
+							<span>小白必看</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="iconfont icon-baike"></i>
+							<span>烘焙百科</span>
+						</a>
+					</li>
+					<li>
+						<a href="signin.html">
+							<i class="iconfont icon-qiandao1"></i>
+							<span>每日签到</span>
+						</a>
+					</li>
+					<li>
+						<a href="foodclass.html">
+							<i class="iconfont icon-leimupinleifenleileibie2"></i>
+							<span>食谱分类</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+		
+			<section class="selected">
+				<div class="select_top">
+					<h3>学堂精选</h3>
+					<a href="#">查看全部</a>
+				</div>
+				<ul class="pic_list">
+					<li>
+						<img src="img/pic_list1.png"/>
+						<div class="study">1000+在学</div>
+						<p>冷冻都不变硬的Q弹【冰淇淋雪媚娘】</p>
+					</li>
+					<li>
+						<img src="img/pic_list1.png"/>
+						<div class="study">1000+在学</div>
+						<p>冷冻都不变硬的Q弹【冰淇淋雪媚娘】</p>
+					</li>
+					<li>
+						<img src="img/pic_list1.png"/>
+						<div class="study">1000+在学</div>
+						<p>冷冻都不变硬的Q弹【冰淇淋雪媚娘】</p>
+					</li>
+				</ul>
+			</section>
+		</section>
+
+		<!--footer-->
+		<footer class="footer">
+			<ul class="foot_nav">
+				<li class="active"> 
+					<a href="index.html">
+						<i class="iconfont icon-chushimao1"></i>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="vedio.html">
+						<i class="iconfont icon-boshimao1"></i>
+						<span>视频学堂</span>
+					</a>
+				</li>
+				<li>
+					<a href="bakeryCircle.html">
+						<i class="iconfont icon-xiaodangao"></i>
+						<span>烘焙圈</span>
+					</a>
+				</li>
+				<li>
+					<a href="my.html">
+						<i class="iconfont icon-wode"></i>
+						<span>我</span>
+					</a>
+ 				</li>
+			</ul>
+		</footer>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".input_search input").focus(function(){
+					$(this).val("");
+				})
+				$(".input_search input").focusout(function(){
+					$(this).val("搜索食谱/食材");
+				})
+			})
+		</script>
+	</body>
+</html>

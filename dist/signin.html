@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1437183_c7ulbiegwoc.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/signin.css"/>
+	</head>
+	<body>
+		<!--header-->
+		<header class="header">
+			<section class="top">
+				<a href="index.html">
+					<span class="iconfont icon-arrowLeft"></span>
+				</a>
+				<ul class="nav"> 
+					<li class="active"><a href="#">每日签到</a></li>
+					<li><a href="#">福利活动</a></li>
+				</ul>
+			</section> 
+			<section class="mid">
+				<div class="headportrait"></div>
+				<div class="des">
+					<p>您已经连续签到<span>99</span>天</p>
+					<p>超过了<span>50%</span>帮友</p>
+				</div>
+				<div class="signin">签到 </div>
+			</section> 
+		</header>
+		<!--content-->
+		<section class="content">
+			<div class="pan">
+				<img src="img/pan.png"/>
+				<img src="img/innerpan.png"/>
+				<img src="img/btn.png"/>
+				<p>15帮贡/次，剩余<span>3</span>次机会</p>
+			</div>
+ 			<p><a href="#">帮贡有什么用?</a></p>
+		</section>
+		
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){ 
+				let inner = $(".pan img")[1];
+				let oBtn = $(".pan img")[2];
+				let val = $(".pan span").html();
+				//console.log(val);
+				var realDeg = 0;
+				$(oBtn).click(function(){
+					if(val==0){
+						alert("今日机会已用完，明天再来吧!");
+						return;
+					}
+					val --;
+					$(".pan span").html(val);
+					realDeg += Math.ceil(Math.random()*1080+720);
+					//realDeg = realDeg > 0 ? -realDeg : 0;
+					console.log(realDeg)
+					$(inner).css({
+			            '-webkit-transition': 'all 3s',
+			            'transition': 'all 3s',
+			            '-webkit-transform': 'rotate(' + (realDeg) + 'deg)',
+			            'transform': 'rotate(' + (realDeg) + 'deg)'
+			        });
+			        var a = realDeg % 360;
+			        console.log("a="+a);
+			        setTimeout(function(){
+			        	if(a>=0&&a<=20 || a>340&&a<360){
+				        	alert("头等奖，+5000帮贡");
+				        }else if(a>20&&a<=60){
+				        	alert("真遗憾,再接再厉哦!");
+				        }else if(a>60&&a<=100){
+				        	alert("关注2次加20帮贡哦");
+				        }else if(a>100&&a<=140){
+				        	alert("二等奖，+1000帮贡");
+				        }else if(a>140&&a<=180){
+				        	alert("分享2次加30帮贡哦");
+				        }else if(a>180&&a<=220){
+				        	alert("点赞十次加25帮贡哦");
+				        }else if(a>220&&a<=260){
+				        	alert("三等奖，+88帮贡");
+				        }else if(a>260&&a<=300){
+				        	alert("上传作品得50帮贡哦！");
+				        }else if(a>300&&a<=340){
+				        	alert("打赏5次加25帮贡哦!");
+				        }
+			        },3000);
+				})
+			})
+		</script>
+	</body>
+</html>

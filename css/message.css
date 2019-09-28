@@ -1,0 +1,109 @@
+html,body {
+	height: 100%
+}
+
+html {
+	font-size: 13.33333vw;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	margin-top: 0.2rem;
+}
+
+.header .icon-arrowLeft{
+	font-size: 0.3rem;
+	color: rgba(51, 51, 51, 1);
+	margin-top: 0.06rem;
+	margin-left: 0.24rem;
+	display: block;
+	float: left;
+}
+.header .title{
+	float:left;
+	margin-left:3.06rem;
+	font-size:0.32rem;
+	font-family:PingFang SC;
+	font-weight:600;
+	line-height:0.44rem;
+	color:rgba(51,51,51,1);
+	opacity:1;
+}
+
+.header .setting{
+	font-size: 0.28rem;
+	color:#666;
+	float: right;
+	margin-right:0.24rem;
+}
+.content .list li{
+	overflow: hidden;
+	margin-top:0.56rem;
+	padding: 0 0.24rem;
+}
+.content .list li .pic{
+	width:0.88rem;
+	height:0.88rem;
+	border-radius:4px;
+	color:#fff;
+	text-align:center;
+	line-height: 1rem;
+	float:left;
+}
+.content .list li .pic span{
+	font-size:0.7rem;
+}
+.content .list li:nth-child(1) .pic{
+	background:#FF997D;
+}
+.content .list li:nth-child(2) .pic{
+	background:#E87CFF;
+}
+.content .list li:nth-child(3) .pic{
+	background:#807DFF;
+}
+.content .list li:nth-child(4) .pic{
+	background:#7DB7FF;
+}
+.content .list li:nth-child(5) .pic{
+	background:#FFD97D;
+}
+.content .list li:nth-child(6) .pic{
+	background:#63D75D;
+}
+.content .list li:nth-child(7) .pic{
+	background:#5CD7A8;
+}
+.content .list li .cont{
+	float:left;
+	margin-left:0.24rem;
+}
+.content .list li .cont .name{
+	font-size:0.32rem;
+	font-family:PingFang SC;
+	font-weight:400;
+	line-height:0.44rem;
+	color:rgba(51,51,51,1);
+	opacity:1;
+}
+.content .list li .cont .des{
+	font-size:0.24rem;
+	font-family:PingFang SC;
+	font-weight:500;
+	line-height:0.34rem;
+	color:rgba(102,102,102,1);
+	margin-top:0.14rem;
+	opacity:1;
+}
+.content .list li .time{
+	float:right;
+	font-size:0.24rem;
+	font-family:PingFang SC;
+	font-weight:500;
+	line-height:0.34rem;
+	color:rgba(102,102,102,1);
+}
