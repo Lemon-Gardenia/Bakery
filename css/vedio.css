@@ -86,19 +86,14 @@ body {
 	height:3rem;
 	margin:0;
 }
-.blue-slide {
-	background: #4390EE;
-}
-.red-slide {
-	background: #CA4040;
-}
-.orange-slide {
-	background: #FF8604;
-}
+ .swiper-wrapper .swiper-slide img{
+ 	width:6.54rem;
+	height:3rem;
+	border-radius:0.1rem;
+ }
  .swiper-wrapper .swiper-slide{
 	width:6.54rem !important;
 	height:3rem;
-	color: #fff;
 	font-size: 0.36rem;
 	text-align: center;
 	border-radius:0.2rem;
@@ -106,6 +101,9 @@ body {
 .selected{
 	margin-top:10px;
 	overflow:hidden;
+}
+.selected section{
+	margin-top: 0.5rem;
 }
 .selected .select_top{
 	height:0.7rem;
@@ -129,6 +127,7 @@ body {
 }
 .pic_list img{
 	width:2.44rem;
+	border-radius:0.1rem;
 }
 .pic_list li{
 	/*float:left;*/
@@ -137,7 +136,7 @@ body {
 	margin-left:0.25rem;
 	position: relative;
 }
-.pic_list li .study{
+.pic_list li .pic .studyperson{
 	width:1.3rem;
 	height:0.34rem;
 	background:#fff;
@@ -152,7 +151,7 @@ body {
 .pic_list li p{
 	margin-top: 0.24rem;
 	line-height:0.36rem;
-	font-size:0.22rem;
+	font-size:0.26rem;
 }
 .autumn{
 	margin-top:0.48rem;

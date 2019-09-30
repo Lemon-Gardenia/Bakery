@@ -1,104 +1,560 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1437183_c7ulbiegwoc.css"/>
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/bakeryCircle.css"/>
+		<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1437183_c7ulbiegwoc.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/bakeryCircle.css" />
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/swiper1.min.js"></script>
 	</head>
+
 	<body>
 		<!--header-->
 		<header class="header">
 			<span class="iconfont icon-add-fill"></span>
 			<div class="input_search">
 				<span class="iconfont icon-fangdajing"></span>
-				<input type="text" value="搜索食谱/食材"/>
+				<input type="text" value="搜索食谱/食材" />
 			</div>
-			<span class="iconfont icon-lingdang"></span>
+			<a href="message.html"><span class="iconfont icon-lingdang"></span></a>
 		</header>
-		
+
 		<!--content-->
 		<section class="content">
 			<section class="banner">
 				<ul class="list">
-					<li></li>
-					<li></li>
-					<li></li>     
-				</ul>
-			</section>
-			<section class="nav">
-				<ul class="nav_list">
-					<li><a href="#">关注</a></li>
-					<li class="active"><a href="#">作业</a></li>
-					<li><a href="#">最新</a></li>
-					<li><a href="#">早餐</a></li>
-					<li><a href="#">午餐</a></li>
-					<li><a href="#">晚餐</a></li>
-				</ul>
-			</section>
-			
-			<section class="common">
-				<ul class="com_list"> 
 					<li>
-						<div class="head">
-							<div class="headportrait"></div> 
-							<div class="des">
-								<p class="name">芬芳食堂</p> 
-								<p class="time">1分钟前<p>
-							</div>
-							<div class="follow">+关注</div>
-						</div> 
-						<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
-						<div class="pic">
-							<img src="img/bakery1.png"/>
-							<img src="img/bakery2.png"/> 
-							<img src="img/bakery3.png"/>
-							<img src="img/bakery4.png"/>
-						</div>
-						<div class="recommend">
-							<img src="img/bakery5.png"/>
-							<div class="re_text">
-								<h4>香辣番茄戚风</h4>
-								<p>食谱作者：帮主阿涛</p>
-							</div>
-						</div>
+						<img src="img/bakeryCircle1.png"/>
 					</li>
 					<li>
-						<div class="head">
-							<div class="headportrait"></div> 
-							<div class="des">
-								<p class="name">芬芳食堂</p> 
-								<p class="time">1分钟前<p>
-							</div>
-							<div class="follow">+关注</div>
-						</div>
-						<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
-						<div class="pic">
-							<img src="img/bakery1.png"/>
-							<img src="img/bakery2.png"/> 
-							<img src="img/bakery3.png"/>
-							<img src="img/bakery4.png"/>
-						</div>
-						<div class="recommend">
-							<img src="img/bakery5.png"/>
-							<div class="re_text">
-								<h4>香辣番茄戚风</h4>
-								<p>食谱作者：帮主阿涛</p>
-							</div>
-						</div>
+						<img src="img/bakeryCircle2.png"/>
+					</li>
+					<li>
+						<img src="img/bakeryCircle3.png"/>
 					</li>
 				</ul>
 			</section>
-			
+			<!--<section class="nav">-->
+			<div class="tabs">
+				<a href="#" class="active">关注</a>
+				<a href="#">作业</a>
+				<a href="#">最新</a>
+				<a href="#">早餐</a>
+				<a href="#">午餐</a>
+				<a href="#">晚餐</a>
+			</div>
+			<!--</section>-->
+
+			<div id="tabs-container" class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<ul class="news-list">
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">
+						<ul class="news-list">
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">
+						<ul class="news-list">
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">
+						<ul class="news-list">
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">
+						<ul class="news-list">
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">
+						<ul class="news-list">
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="head">
+									<div class="headportrait"></div>
+									<div class="des">
+										<p class="name">芬芳食堂</p>
+										<p class="time">1分钟前
+											<p>
+									</div>
+									<div class="follow">+关注</div>
+								</div>
+								<p class="article">口味很独特，有一种吃鸳鸯火锅的错觉!</p>
+								<div class="pic">
+									<img src="img/bakery1.png" />
+									<img src="img/bakery2.png" />
+									<img src="img/bakery3.png" />
+									<img src="img/bakery4.png" />
+								</div>
+								<div class="recommend">
+									<img src="img/bakery5.png" />
+									<div class="re_text">
+										<h4>香辣番茄戚风</h4>
+										<p>食谱作者：帮主阿涛</p>
+									</div>
+								</div>
+								<div class="bottom">
+									<div class="zan">
+										<span class="iconfont icon-dianzan"></span>
+										<span>15</span>
+									</div>
+									<div class="shang">
+										<span class="iconfont icon-wodeyuanbao"></span>
+										<span>打赏</span>
+									</div>
+									<div class="zan">
+										<span class="iconfont icon-pinglun"></span>
+										<span>评论</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+
 		</section>
 
 		<!--footer-->
 		<footer class="footer">
 			<ul class="foot_nav">
-				<li> 
+				<li>
 					<a href="index.html">
 						<i class="iconfont icon-chushimao1"></i>
 						<span>首页</span>
@@ -121,8 +577,30 @@
 						<i class="iconfont icon-wode"></i>
 						<span>我</span>
 					</a>
- 				</li>
+				</li>
 			</ul>
 		</footer>
+
+		<script type="text/javascript">
+			window.onload = function() {
+
+				var tabsSwiper = new Swiper('.swiper-container', {
+					speed: 500,
+			        on: {
+			            slideChangeTransitionStart: function() {
+			                $(".tabs .active").removeClass('active');
+			                $(".tabs a").eq(this.activeIndex).addClass('active');
+			            }
+			        }
+				});
+				$(".tabs a").on('click', function(e) {
+					e.preventDefault()
+					$(".tabs .active").removeClass('active')
+					$(this).addClass('active')
+					tabsSwiper.slideTo($(this).index())
+				})
+			}
+		</script>
 	</body>
+
 </html>
