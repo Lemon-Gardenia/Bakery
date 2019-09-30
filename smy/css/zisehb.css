@@ -1,0 +1,56 @@
+html, body {
+  height: 100%; }
+
+html {
+  font-size: 13.33333vw; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+.content {
+  flex: 1;
+  overflow-y: auto; }
+
+.content img {
+  width: 3.88rem;
+  height: 3.56rem;
+  margin-top: 2.81rem;
+  margin-left: 1.83rem; }
+
+.content #zisehb {
+  width: 100%;
+  height: 4.5rem;
+  background: #ef4b80;
+  opacity: 1;
+  margin-top: 1.5rem;
+  font-size: 0.4rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  line-height: 0.56rem;
+  color: white;
+  text-align: center; }
+
+#zisehb {
+  position: relative; }
+
+.content .box {
+  width: 1.32rem;
+  height: 1.32rem;
+  background: #ef4b80;
+  box-shadow: 0px 4px 12px rgba(237, 182, 18, 0.5);
+  border-radius: 50%;
+  opacity: 1;
+  position: absolute;
+  top: -0.66rem;
+  left: 3.12rem; }
+
+.box .icon-arrow-right {
+  font-size: 0.74rem;
+  color: white;
+  display: block;
+  margin-top: 0.42rem; }

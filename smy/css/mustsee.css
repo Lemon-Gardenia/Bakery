@@ -1,0 +1,67 @@
+html, body {
+  height: 100%; }
+
+html {
+  font-size: 13.33333vw; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  height: 0.84rem;
+  margin-top: 0.2rem; }
+
+.header span {
+  font-size: 0.32rem;
+  display: block;
+  float: left;
+  margin: 0.18rem 0.2rem 0; }
+
+.header .collect {
+  width: 1.28rem;
+  height: 0.5rem;
+  border: 1px solid #e8876d;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 0.5rem;
+  font-size: 0.32rem;
+  color: #E8876D;
+  float: right;
+  margin-right: 0.24rem; }
+
+.content .vedio img {
+  width: 7.5rem; }
+
+.content .vedio {
+  position: relative; }
+
+.content .vedio .play {
+  position: absolute;
+  font-size: 1.1rem;
+  left: 3.15rem;
+  top: 1.25rem;
+  margin: auto;
+  color: #fff; }
+
+.content .article {
+  padding: 0 0.24rem; }
+
+.content .article h3 {
+  font-size: 0.32rem;
+  font-family: PingFang SC;
+  font-weight: 600;
+  line-height: 0.44rem;
+  color: #333333;
+  opacity: 1;
+  margin-top: 0.52rem; }
+
+.content .article .article_con {
+  margin-top: 0.1rem; }
+
+.content .article .article_con p {
+  margin-top: 0.3rem;
+  line-height: 0.35rem; }
+
+.content .article .article_con p span {
+  color: #E8876D; }

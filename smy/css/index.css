@@ -1,0 +1,22 @@
+html, body {
+  height: 100%; }
+
+html {
+  font-size: 13.33333vw; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  height: 1.68rem;
+  background: #E94544; }
+
+.content {
+  flex: 1;
+  overflow-y: auto; }
+
+.footer {
+  height: 1.04rem;
+  border-top: 1px solid #ddd;
+  background: aquamarine; }
