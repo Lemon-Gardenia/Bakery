@@ -28,12 +28,6 @@ gulp.task("img",function(){
 gulp.task("js",function(){
 	gulp.src("js/*.js")
 	.pipe(babel({"presets":["es2015"]}))
-	.pipe(gulp.dest("dist/js"))
-	.pipe(uglify())
-	.pipe(rename({
-		suffix:".min",
-		extname:".js"
-	}))
 	.pipe(gulp.dest("dist/js")).pipe(connect.reload());
 });
 

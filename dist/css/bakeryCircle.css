@@ -63,42 +63,44 @@ body {
 .banner .list {
   display: flex;
   margin-top: 0.3rem;
-  overflow: auto; }
+  overflow-x: auto; }
 
 .banner .list li {
   flex: 1 0 auto;
   width: 3.6rem;
   height: 2.1rem;
-  background: #F0F1F3;
   margin-left: 0.24rem; }
 
-.nav_list {
+.banner .list li img {
+  width: 3.6rem;
+  height: 2.1rem; }
+
+.tabs {
   height: 0.92rem;
   display: flex;
   justify-content: space-around;
   margin-top: 0.24rem; }
 
-.nav_list li {
+.tabs a {
   font-size: 0.32rem;
   line-height: 0.92rem; }
 
-.nav_list .active a {
-  line-height: 0.36rem;
+.tabs .active {
   border-bottom: 0.08rem solid #E8876D; }
 
-.common {
+.swiper-container {
   background: #f1f1f1;
   margin-top: 10px; }
 
-.common li {
+.swiper-container li {
   background: #fff;
   margin-top: 0.1rem;
   padding: 0.2rem 0.24rem; }
 
-.com_list li .head {
+.news-list li .head {
   height: 0.8rem; }
 
-.com_list li .head .headportrait {
+.news-list li .head .headportrait {
   width: 0.8rem;
   height: 0.8rem;
   background: salmon;
@@ -106,18 +108,18 @@ body {
   float: left;
   margin-right: 0.36rem; }
 
-.com_list li .head .des {
+.news-list li .head .des {
   float: left; }
 
-.com_list li .head .des .name {
+.news-list li .head .des .name {
   font-size: 0.32rem; }
 
-.com_list li .head .des .time {
+.news-list li .head .des .time {
   font-size: 0.24rem;
   margin-top: 0.04rem;
   color: #999; }
 
-.com_list li .head .follow {
+.news-list li .head .follow {
   width: 1.12rem;
   height: 0.4rem;
   border: 1px solid #ffe7df;
@@ -127,43 +129,59 @@ body {
   line-height: 0.4rem;
   margin-top: 0.2rem; }
 
-.com_list li .article {
+.news-list li .article {
   margin-top: 0.28rem;
   font-size: 0.28rem;
   color: #666; }
 
-.com_list li .pic {
+.news-list li .pic {
   width: 4.2rem;
   margin-top: 0.14rem;
   overflow: hidden; }
 
-.com_list li .pic img {
+.news-list li .pic img {
   width: 2rem;
   float: left;
   margin-right: 0.1rem;
   margin-top: 0.1rem; }
 
-.com_list li .recommend {
+.news-list li .recommend {
   width: 5.92rem;
   height: 1.06rem;
   background: #F5F7F9;
   margin-top: 0.36rem; }
 
-.com_list li .recommend img {
+.news-list li .recommend img {
   float: left; }
 
-.com_list li .recommend .re_text {
+.news-list li .recommend .re_text {
   float: left;
   margin-left: 0.24rem;
   margin-top: 0.16rem; }
 
-.com_list li .recommend .re_text h4 {
+.news-list li .recommend .re_text h4 {
   font-size: 0.28rem;
   color: #666; }
 
-.com_list li .recommend .re_text p {
+.news-list li .recommend .re_text p {
   font-size: 0.24rem;
   color: #8a8a8a; }
+
+.news-list li .bottom {
+  display: flex;
+  margin-top: 0.4rem;
+  padding: 0.15rem 0;
+  border-top: solid 1px #cecece; }
+
+.news-list li .bottom div {
+  flex: 1;
+  font-size: 0.24rem;
+  color: #CECECE;
+  text-align: center; }
+
+.news-list li .bottom div:nth-of-type(2) {
+  border-left: solid 1px #CECECE;
+  border-right: solid 1px #CECECE; }
 
 .footer {
   height: 0.96rem;
