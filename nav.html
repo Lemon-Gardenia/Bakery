@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<title>Nav</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1437183_jmynmyj3zn.css"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+</head>
+<body>
+	<header class="head">
+		<span class="iconfont icon-arrowLeft sp"></span>
+		<p><span class="iconfont icon-fangdajing"></span><input type="text" placeholder="搜索食谱/食材" /></p>
+	</header> 
+	<div class="content">
+		<ul id="lists">
+			<li class="active">食谱</li>
+			<li >课程</li>
+			<li>食单</li>
+			<li>问答</li>
+			<li>文章</li>
+		</ul>
+		<div class="ig">
+			<ul class="list">
+				<li>
+					<img src="img/aa.jpg"/>
+				</li>
+				<li>
+					<img src="img/cc.jpg"/>
+					<img src="img/cake.jpg"/>
+				</li>
+				<li>
+				</li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<footer class="foot"></footer>
+	<script type="text/javascript">
+		var oUl=document.getElementById("lists");
+		var oLi=oUl.children;
+		var aLi=document.getElementsByClassName("list")[0].children
+		for (let i=0;i<oLi.length;i++) {
+			oLi[i].onclick=function(){
+				for(var j=0;j<oLi.length;j++) {
+					oLi[j].className="";
+					aLi[j].style.display="none"
+				}
+					oLi[i].className="active";
+					aLi[i].style.display="block";
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.head {
+  height: 0.52rem;
+  background: #ffffff;
+  margin-top: 0.3rem; }
+
+.head > span {
+  float: left;
+  margin-top: 0.1rem; }
+
+.head p {
+  float: left;
+  width: 5.36rem;
+  height: 0.52rem;
+  margin-left: 0.55rem;
+  background: #f0f0ef;
+  border-radius: 0.25rem;
+  line-height: 0.52rem; }
+
+.head p span {
+  float: left;
+  margin-left: 0.3rem; }
+
+.head p input {
+  border: 0;
+  outline: none;
+  float: left;
+  display: block;
+  margin-top: 0.1rem;
+  margin-left: 0.1rem;
+  background: #f0f0ef; }
+
+.content #lists li {
+  width: 0.64rem;
+  height: 0.44rem;
+  float: left;
+  font-size: 0.32rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 0.44rem;
+  margin-right: 0.55rem; }
+
+.active {
+  border-bottom: solid 0.04rem #e8876d; }
+
+.ig {
+  position: relative; }
+
+.ig img {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 50%; }
+
+.content #lists {
+  margin-left: 0.9rem;
+  margin-top: 0.23rem; }
+
+.foot {
+  background: #ffffff; }
