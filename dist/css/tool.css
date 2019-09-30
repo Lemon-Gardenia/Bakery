@@ -1,0 +1,37 @@
+html, body {
+  height: 100%; }
+
+html {
+  font-size: 13.33333vw; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  height: 0.9rem;
+  background: #E94544; }
+
+.header ._l {
+  width: 0.18rem;
+  height: 0.3rem;
+  display: inline-block;
+  float: left; }
+
+.header ._r {
+  width: 1.12rem;
+  height: 0.4rem;
+  font-size: 0.28rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 0.4rem;
+  color: #e8876d; }
+
+.content {
+  flex: 1;
+  overflow-y: auto; }
+
+.footer {
+  height: 0.55rem;
+  border-top: 1px solid #ddd;
+  background: aquamarine; }

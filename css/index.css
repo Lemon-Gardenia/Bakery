@@ -1,16 +1,17 @@
-html,body {
-	height: 100%
-}
+html,body{height:100%}
+html{font-size: 13.33333vw;}
+body{display: flex;flex-direction: column;}
 
-html {
-	font-size: 13.33333vw;
-}
+.header{height:1.68rem;background: #E94544;}
 
-body {
-	display: flex;
-	flex-direction: column;
-}
+.content{flex: 1;overflow-y: auto;}
 
+<<<<<<< HEAD
+.footer{height:1.04rem;border-top:1px solid #ddd;background: aquamarine;}
+=======
+<<<<<<< HEAD
+.footer{height:1.04rem;border-top:1px solid #ddd;background: aquamarine;}
+=======
 .header {
 	display: flex;
 	margin-top: 0.2rem;
@@ -215,3 +216,5 @@ body {
 .foot_nav li span{
 	font-size:0.16rem;
 }
+>>>>>>> 8283141fa82c6ce6a053a3446ed8b7f33b5cdced
+>>>>>>> 70ca9d2c08a99820c5442b3e04e987e1c777ba62

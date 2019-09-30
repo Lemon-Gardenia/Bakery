@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>history</title>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1437183_jmynmyj3zn.css"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/history.css"/>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<header class="head">
+		<p>
+		<span class="iconfont icon-arrowLeft"></span>
+		<span>浏览记录</span>
+		</p>
+	</header> 
+	<div class="content">
+		<ul>
+			
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$.ajax({
+				type:"get",
+				url:"https://www.fastmock.site/mock/01de2063bd2673d6411518c00a26b7b8/api/record",
+				success:function(data){
+					str="";
+					for(var i=0;i<data.length;i++){
+					str+=`<li>
+						<img src="img/${data[i].img}">
+						 <div>
+						 <h2>${data[i].title}<h2>
+						 <p>${data[i].name}<p>
+						 <span>${data[i].collection}</span>
+						 <span>${data[i].did}</span>
+						 </div>
+						<li>`
+					}
+					$("ul").html(str);
+				}
+			});
+		})
+		
+	</script>
+</body>
+</html>

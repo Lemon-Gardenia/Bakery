@@ -1,0 +1,11 @@
+.head {height: 0.44rem;background: #ffffff;}
+.head  span{font-size:0.32rem;font-family:PingFang SC;font-weight:600;margin-left:0.2rem ;}
+.head  span:nth-child(2){margin-left: 2.36rem;}
+.head p{margin-top: 0.26rem;}
+.content ul{margin-top: 0.4rem;margin-left: 0.23rem;}
+.content ul li{overflow: hidden;margin-bottom: 0.2rem;}
+.content ul li img{float: left;width: 100px;}
+.content ul li div{float: left;margin-left: 0.3rem;}
+.content ul li div h2{font-size:0.32rem;font-family:PingFang SC;font-weight:600;line-height:0.44rem;color:#333333;}
+.content ul li div p{font-size:0.24rem;font-family:PingFang SC;font-weight:400;color: #666666;}
+.content ul li div span{font-size:0.24rem;font-family:PingFang SC;font-weight:400;color: #333333;}
