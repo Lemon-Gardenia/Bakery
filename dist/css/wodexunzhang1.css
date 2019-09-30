@@ -1,0 +1,97 @@
+html, body {
+  height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 13.33333vw; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #F5F7F9; }
+
+.header {
+  height: 1.04rem;
+  position: relative;
+  background: #FFFFFF; }
+
+.header .icon-arrowLeft {
+  width: 0.4rem;
+  height: 0.4rem;
+  opacity: 1;
+  display: block;
+  margin-top: 0.32rem;
+  margin-left: 0.24rem;
+  font-size: 0.4rem; }
+
+.header p i {
+  font-size: 0.32rem;
+  font-family: PingFang SC;
+  font-weight: 500;
+  line-height: 0.44rem;
+  color: #333333;
+  position: absolute;
+  top: 0.24rem;
+  left: 3.14rem; }
+
+.content {
+  margin-top: 0.2rem;
+  height: 1.72rem;
+  background: #FFFFFF; }
+
+.content .bt {
+  width: 100%;
+  height: 0.85rem;
+  font-size: 0.32rem;
+  font-family: PingFang SC;
+  text-indent: 0.32rem;
+  font-weight: 400;
+  line-height: 0.85rem;
+  color: #333333; }
+
+.bt span {
+  color: red; }
+
+.bt1 span {
+  color: red; }
+
+.footer {
+  margin-top: 0.2rem;
+  height: 100%;
+  background: #FFFFFF; }
+
+.footer .bt1 {
+  width: 100%;
+  height: 0.85rem;
+  font-size: 0.32rem;
+  font-family: PingFang SC;
+  text-indent: 0.32rem;
+  font-weight: 400;
+  line-height: 0.85rem;
+  color: #333333; }
+
+.footer .box {
+  width: 7.02rem;
+  height: 8.36rem;
+  margin-left: 0.24rem;
+  margin-top: 0.24rem;
+  display: flex;
+  flex-wrap: wrap; }
+
+.box li img {
+  width: 1.26rem;
+  height: 1.26rem; }
+
+.box ul li {
+  font-size: 0.2rem;
+  color: #757575; }
+
+.box ul {
+  width: 1.22rem;
+  height: 1.9rem;
+  flex: 1;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
