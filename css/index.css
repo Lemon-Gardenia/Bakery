@@ -132,6 +132,12 @@ body {
 	margin-top:10px;
 	overflow:hidden;
 }
+.selected section:first-child{
+	margin:0;
+}
+.selected section{
+	margin-top:0.5rem;
+}
 .selected .select_top{
 	height:0.7rem;
 }
@@ -154,6 +160,7 @@ body {
 }
 .pic_list img{
 	width:2.44rem;
+	border-radius:0.1rem;
 }
 .pic_list li{
 	/*float:left;*/
@@ -162,7 +169,7 @@ body {
 	margin-left:0.25rem;
 	position: relative;
 }
-.pic_list li .study{
+.pic_list li .pic .studyperson{
 	width:1.3rem;
 	height:0.34rem;
 	background:#fff;
@@ -177,7 +184,7 @@ body {
 .pic_list li p{
 	margin-top: 0.24rem;
 	line-height:0.36rem;
-	font-size:0.22rem;
+	font-size:0.26rem;
 }
 .footer {
 	height: 0.96rem;

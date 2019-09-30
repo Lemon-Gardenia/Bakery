@@ -55,27 +55,74 @@
 			</section>
 		
 			<section class="selected">
-				<div class="select_top">
-					<h3>学堂精选</h3>
-					<a href="#">查看全部</a>
-				</div>
-				<ul class="pic_list">
-					<li>
-						<img src="img/pic_list1.png"/>
-						<div class="study">1000+在学</div>
-						<p>冷冻都不变硬的Q弹【冰淇淋雪媚娘】</p>
-					</li>
-					<li>
-						<img src="img/pic_list1.png"/>
-						<div class="study">1000+在学</div>
-						<p>冷冻都不变硬的Q弹【冰淇淋雪媚娘】</p>
-					</li>
-					<li>
-						<img src="img/pic_list1.png"/>
-						<div class="study">1000+在学</div>
-						<p>冷冻都不变硬的Q弹【冰淇淋雪媚娘】</p>
-					</li>
-				</ul>
+				<section class="study">
+					<div class="select_top">
+						<h3>学堂精选</h3>
+						<a href="#">查看全部</a>
+					</div>
+					<ul class="pic_list">
+						<!--<li>
+							<img src="img/pic_list1.png"/>
+							<div class="study">1000+在学</div>
+							<p>冷冻都不变硬的Q弹【冰淇淋雪媚娘】</p>
+						</li>
+						<li>
+							<img src="img/pic_list1.png"/>
+							<div class="study">1000+在学</div>
+							<p>冷冻都不变硬的Q弹【冰淇淋雪媚娘】</p>
+						</li>
+						<li> 
+							<img src="img/pic_list1.png"/>
+							<div class="study">1000+在学</div>
+							<p>冷冻都不变硬的Q弹【冰淇淋雪媚娘】</p>
+						</li>-->
+					</ul>
+				</section>
+				<section class="private">
+					<div class="select_top">
+						<h3>私房网红</h3>
+						<a href="#">查看全部</a>
+					</div>
+					<ul class="pic_list">
+						
+					</ul>
+				</section>
+				<section class="seasonal">
+					<div class="select_top">
+						<h3>应季必做</h3>
+						<a href="#">查看全部</a>
+					</div>
+					<ul class="pic_list">
+						
+					</ul>
+				</section>
+				<section class="breakfast">
+					<div class="select_top">
+						<h3>元气早餐</h3>
+						<a href="#">查看全部</a>
+					</div>
+					<ul class="pic_list">
+						
+					</ul>
+				</section>
+				<section class="classic">
+					<div class="select_top">
+						<h3>烘焙经典</h3>
+						<a href="#">查看全部</a>
+					</div>
+					<ul class="pic_list">
+						
+					</ul>
+				</section>
+				<section class="technique">
+					<div class="select_top">
+						<h3>技法专栏</h3>
+						<a href="#">查看全部</a>
+					</div>
+					<ul class="pic_list">
+						
+					</ul>
+				</section>
 			</section>
 		</section>
 
@@ -117,6 +164,114 @@
 				$(".input_search input").focusout(function(){
 					$(this).val("搜索食谱/食材");
 				})
+				$.ajax({
+					type:"get",
+					url:"https://www.fastmock.site/mock/40f684b67422ba1ff45777f3e7732817/bakery01/a",
+					async:true,
+					success:function(data){
+						var str = "";
+						for(let i in data){
+							str += `<li>
+										<div class="pic">
+											<img src="${data[i].imgsrc}"/>
+											<div class="studyperson">${data[i].study}+在学</div>
+										</div>
+										<p>${data[i].title}</p>
+									</li>`;
+						}
+						$(".study .pic_list").html(str);
+					}
+				});
+				$.ajax({
+					type:"get",
+					url:"https://www.fastmock.site/mock/edae71c33aaac04ce47cc52646cb080f/index1/b",
+					async:true,
+					success:function(data){
+						var str = "";
+						for(let i in data){
+							str += `<li>
+										<div class="pic">
+											<img src="${data[i].imgsrc}"/>
+											<div class="studyperson">${data[i].study}+在学</div>
+										</div>
+										<p>${data[i].title}</p>
+									</li>`;
+						}
+						$(".private .pic_list").html(str);
+					}
+				});
+				$.ajax({
+					type:"get",
+					url:"https://www.fastmock.site/mock/78e4f0a33c9e05a355777c838edeeee2/c/d",
+					async:true,
+					success:function(data){
+						var str = "";
+						for(let i in data){
+							str += `<li>
+										<div class="pic">
+											<img src="${data[i].imgsrc}"/>
+											<div class="studyperson">${data[i].study}+在学</div>
+										</div>
+										<p>${data[i].title}</p>
+									</li>`;
+						}
+						$(".seasonal .pic_list").html(str);
+					}
+				});
+				$.ajax({
+					type:"get",
+					url:"https://www.fastmock.site/mock/33ca6d01f4c3b3ef63adbc0740e2d9e7/index3/e",
+					async:true,
+					success:function(data){
+						var str = "";
+						for(let i in data){
+							str += `<li>
+										<div class="pic">
+											<img src="${data[i].imgsrc}"/>
+											<div class="studyperson">${data[i].study}+在学</div>
+										</div>
+										<p>${data[i].title}</p>
+									</li>`;
+						}
+						$(".breakfast .pic_list").html(str);
+					}
+				});
+				$.ajax({
+					type:"get",
+					url:"https://www.fastmock.site/mock/071ba037d32e33e0a5b0a61d968f6af4/index4/f",
+					async:true,
+					success:function(data){
+						var str = "";
+						for(let i in data){
+							str += `<li>
+										<div class="pic">
+											<img src="${data[i].imgsrc}"/>
+											<div class="studyperson">${data[i].study}+在学</div>
+										</div>
+										<p>${data[i].title}</p>
+									</li>`;
+						}
+						$(".classic .pic_list").html(str);
+					}
+				});
+				$.ajax({
+					type:"get",
+					url:"https://www.fastmock.site/mock/005919b14dd1407d9211e1d29a65f01b/index5/g",
+					async:true,
+					success:function(data){
+						var str = "";
+						for(let i in data){
+							str += `<li>
+										<div class="pic">
+											<img src="${data[i].imgsrc}"/>
+											<div class="studyperson">${data[i].study}+在学</div>
+										</div>
+										<p>${data[i].title}</p>
+									</li>`;
+						}
+						$(".technique .pic_list").html(str);
+					}
+				});
 			})
 		</script>
 	</body>
