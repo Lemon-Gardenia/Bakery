@@ -1,0 +1,18 @@
+html,body{height:100%}
+html{font-size: 13.33333vw;}
+body{display: flex;flex-direction: column;}
+
+.header{height:1.44rem;}
+.header span{font-size: 0.42rem;color: black;display: block;float: left;margin: 0.68rem 0.2rem 0;}
+.content{flex: 1;overflow-y: auto;text-align: center;background: #d0a686;}
+.content .banner{height: 3.94rem;overflow: hidden;}
+.banner img{height: 3.94rem;width: 100%}
+.banner h2{font-weight: 600;font-size: 0.74rem}
+.banner .date{font-size: 0.34rem; line-height: 0.7rem; margin: 0.56rem auto 0; width:3.08rem; height:0.7rem; background: #FFFFFF; border-radius:0.6rem; -webkit-border-radius:0.6rem; -moz-border-radius:0.6rem; -ms-border-radius:0.6rem; -o-border-radius:0.6rem; }
+.content .bg{width: 5.38rem;background: rgba(255, 255, 255, 0.877);margin: 0.25rem auto 0;border: 0.23rem rgba(209,168,138, 0.329) groove;border-bottom:0 }
+.content .font_one,.content .font_two,.content .font_three {font-size: 0.2rem;width: 100%;margin: 0 auto;padding: 0.15rem 0;box-sizing: border-box;border-bottom: 1px dashed #adadad;line-height: 0.4rem}
+.content .font_one{height: 1.6rem;}
+.content .font_two{height: 3.18rem;}
+.content .font_three {height:1.63rem;border: 0;}
+.content .intail{ width: 90%; height: 1.1rem; margin: 0.3rem auto; background: #b40000; border-radius:0.05rem ; -webkit-border-radius:0.05rem ; -moz-border-radius:0.05rem ; -ms-border-radius:0.05rem ; -o-border-radius:0.05rem ; color: white; line-height: 0.5rem; }
+.footer{height: 0.94rem;background: #e98b71;color: white;font-size: 0.29rem;text-align: center;line-height: 0.94rem;font-family: PingFang SC;}

@@ -1,0 +1,128 @@
+html, body {
+  height: 100%; }
+
+html {
+  font-size: 13.33333vw; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "PingFang SC"; }
+
+.header {
+  display: flex;
+  margin-top: 0.2rem; }
+
+.header .icon-add-fill {
+  font-size: 0.39rem;
+  color: #333333;
+  margin-top: 0.06rem;
+  margin-left: 0.5rem;
+  display: block; }
+
+.header .input_search {
+  width: 5.36rem;
+  height: 0.52rem;
+  background: #f0f0ef;
+  border: 0px solid #f0f0ef;
+  opacity: 1;
+  border-radius: 0.26rem;
+  line-height: 0.52rem;
+  margin-left: 0.2rem; }
+
+.header .input_search input {
+  border: 0;
+  width: 60%;
+  color: #999999;
+  font-size: 0.24rem;
+  line-height: 0.52rem;
+  background: #f0f0ef;
+  outline: none;
+  margin-left: 0.16rem;
+  float: left; }
+
+.header .input_search .iconfont {
+  font-size: 0.22rem;
+  color: #999999;
+  margin-left: 0.38rem;
+  float: left; }
+
+.header .icon-lingdang {
+  font-size: 0.44rem;
+  color: #333333;
+  opacity: 1;
+  float: left;
+  margin-top: 0.06rem;
+  margin-left: 0.2rem; }
+
+.content {
+  flex: 1;
+  overflow-y: auto; }
+
+/*banner*/
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.32rem;
+  height: 1.2rem;
+  line-height: 1.2rem; }
+
+.tabs li a {
+  padding-bottom: 0.06rem; }
+
+.active {
+  font-weight: 600;
+  border-bottom: #E8876D 0.08rem solid; }
+
+.swiper-container {
+  margin: 0 0.28rem; }
+
+.swiper-slide li {
+  height: 1.44rem;
+  margin-bottom: 0.4rem; }
+
+.swiper-slide img {
+  float: left; }
+
+.swiper-slide li div {
+  float: left;
+  margin-left: 0.32rem; }
+
+.swiper-slide li div h5 {
+  font-size: 0.32rem;
+  line-height: 0.44rem; }
+
+.swiper-slide li div p {
+  color: #666666;
+  font-size: 0.24rem;
+  line-height: 0.61rem; }
+
+.swiper-slide li div span {
+  font-size: 0.24rem;
+  margin-right: 0.2rem; }
+
+.footer {
+  height: 0.96rem;
+  border-top: 1px solid #ddd; }
+
+.foot_nav {
+  height: 100%;
+  display: flex;
+  justify-content: center; }
+
+.foot_nav li {
+  flex: 1;
+  color: #979797;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.foot_nav .active {
+  color: #333; }
+
+.foot_nav li i {
+  font-size: 0.4rem; }
+
+.foot_nav li span {
+  font-size: 0.16rem; }

@@ -1,0 +1,16 @@
+html,body{height:100%}
+html{font-size: 13.33333vw;}
+body{display: flex;flex-direction: column;}
+
+.header{height:1.44rem;}
+.header span{font-size: 0.42rem;color: black;display: block;float: left;margin: 0.68rem 0.2rem 0;}
+.content{flex: 1;overflow-y: auto;text-align: center;}
+.content .bg{background: url("../img/classTwo_bg.png") repeat;}
+.content .banner{height: 3.94rem;margin: 0 0.24rem;background: #F0F1F3;overflow: hidden;text-align: center;}
+.banner img{margin: 0.42rem auto;width: 2.4rem;height: 0.4rem;}
+.banner h2{font-weight: 600;font-size: 0.74rem}
+.banner .date{font-size: 0.34rem; line-height: 0.7rem; margin: 0.56rem auto 0; width:3.08rem; height:0.7rem; background: #FFFFFF; border-radius:0.6rem; -webkit-border-radius:0.6rem; -moz-border-radius:0.6rem; -ms-border-radius:0.6rem; -o-border-radius:0.6rem; }
+.content .font{font-size: 0.27rem;width: 100%;margin: 0 auto;line-height: 0.5rem;height: 3rem;padding-top: 0.64rem;box-sizing: border-box;}
+.content h3{font-size:0.34rem;font-weight: 600;}
+.content .intail{ width: 6.97rem; height: 1.37rem; margin: 0.25rem auto 1.3rem; line-height: 0.57rem; background: #f0f1f3; border: 2px solid #b9c3c1; border-radius:0.1rem ; -webkit-border-radius:0.1rem ; -moz-border-radius:0.1rem ; -ms-border-radius:0.1rem ; -o-border-radius:0.1rem ; }
+.footer{height: 0.94rem;background: #e98b71;color: white;font-size: 0.29rem;text-align: center;line-height: 0.94rem;font-family: PingFang SC;}

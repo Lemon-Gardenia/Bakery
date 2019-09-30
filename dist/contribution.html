@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1437183_c7ulbiegwoc.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/contribution.css"/> 
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/swiper.min.js"></script> 
+</head>
+<body>
+	<!--header-->
+		<header class="header">
+            <div class="nav">
+                <a href="index.html"><span class="iconfont icon-arrowLeft"></span></a>
+                <a><span>我的帮贡</span></a>
+                <a href="#"><span>规则</span></a>
+            </div>
+		</header>	
+		<!--content-->
+		<section class="content">
+            <div class="main">
+                <h2>25</h2>
+                <p>可使用帮贡</p>
+                <a class="buy" href="#">去兑换</a>
+            </div>
+            <div class="faq">
+                <h3>FAQ:</h3>
+                <P>Q：这里的帮贡为什么和【我】的不同？</br>
+                        A：【我】显示的是账户总获得帮贡，这里显示的是账户当前剩余可使用的帮贡哦。</br>
+                        Q：相差的帮贡去哪啦？</br>
+                        A：打赏，答谢，删除食谱，删除作品。兑换，购买签到等使用到帮贡的行为均会减少可使用帮贡。</P>
+            </div>
+            <div class="task">
+                <div class="tabs">
+                        <a href="#" class="bt">帮贡明细</a>
+                        <a href="#">兑换明细</a>
+                </div>
+                <div id="tabs-container" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="list_one">
+                                <li><p class="ellips">首次发表评论柔软吐司，百分百出膜lvaa</p><span>2019/07/05</span><em>+50</em></li>
+                                <li><p class="ellips">首次发表评论柔软吐司，百分百出膜</p><span>2019/07/05</span><em>+502</em></li>
+                                <li><p class="ellips">首次发表评论柔软吐司，百分百出膜</p><span>2019/07/05</span><em>+50</em></li>
+                                <li><p class="ellips">首次发表评论柔软吐司，百分百出膜</p><span>2019/07/05</span><em>+50</em></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="list_two">
+                                <li><p class="ellips">兑换奥术大师大所大所多兑换奥术大师大所大所多</p><span>2019/07/05</span><em>+50</em></li>
+                                <li><p class="ellips">兑换奥术大师大所大所多</p><span>2019/07/05</span><em>-02</em></li>
+                                <li><p class="ellips">兑换奥术大师大所大所多</p><span>2019/07/05</span><em>-50</em></li>
+                                <li><p class="ellips">兑换奥术大师大所大所多</p><span>2019/07/05</span><em>+50</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+		<!--footer-->
+		<footer class="footer"></footer> 
+</body>
+<script>
+    window.onload = function() {
+		var tabsSwiper = new Swiper('#tabs-container', {
+		        speed: 500,
+		        on: {
+		            slideChangeTransitionStart: function() {
+		                $(".tabs .bt").removeClass('bt');
+		                $(".tabs a").eq(this.activeIndex).addClass('bt');
+		            }
+		        }
+		    })
+		    $(".tabs a").on('click', function(e) {
+                e.preventDefault()
+		        $(".tabs .bt").removeClass('bt')
+		        $(this).addClass('bt')
+		        tabsSwiper.slideTo($(this).index())
+		    })
+        }
+        
+        $.ajax({
+   type: "GET",
+   url: "https://www.fastmock.site/mock/7a8248de7d3af49f8396c7fcf9681043/tool/QQ",
+   dataType:"json",
+   success: function(msg){
+     console.log( "Data Saved: " + msg.data.name);
+   }
+});
+</script>
+</html>

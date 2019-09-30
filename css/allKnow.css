@@ -1,0 +1,22 @@
+html,body{height:100%}
+html{font-size: 13.33333vw;}
+body{display: flex;flex-direction: column;}
+
+.header{height:1.9rem;}
+.header .top{height: 0.9rem;margin:0.26rem 0.24rem 0 0.14rem ;}
+.header ._l{display:block;float: left;}
+.header ._r{width:1.12rem;height:0.4rem;font-size:0.28rem;font-family:PingFang SC;font-weight:400;line-height:0.4rem;color:rgba(232,135,109,1);float: right;}
+.header ul{display: flex;justify-content: space-around;}
+.header ul li{width:1.28rem;height:0.44rem;font-size:0.32rem;font-family:PingFang SC;font-weight:400;line-height:0.44rem;color:rgba(51,51,51,1);}
+.tabs a{display: block;}
+.active{font-weight: 600;border-bottom:0.08rem rgba(232,135,109,1) solid;padding-bottom: 0.08rem}
+
+
+.content{flex: 1;overflow-y: auto;}
+.content ul{margin: 0rem 0.24rem;}
+.content ul li{padding: 0.23rem 0;height: 1.36rem;border-bottom:rgba(216,216,216,0.3) 0.04rem solid;}
+.content ul li img{width:2.36rem;height:1.36rem;float: left;}
+.content ul li p{font-size:0.32rem;font-family:PingFang SC;float: left;width: 3.9rem; font-weight:400;margin:0.22rem 0.32rem ;line-height:0.44rem;}
+
+
+.footer{height:0.55rem;}
